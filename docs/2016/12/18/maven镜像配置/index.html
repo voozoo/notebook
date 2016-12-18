@@ -68,7 +68,7 @@
 <link href="/notebook/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="apache,maven," />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="我的笔记本中原本是没打算记录类似这些感慨类的文章的，但是使用了这个新的平台发布文章后觉得还是应该留个纪念。">
+<meta name="description" content="开始接触maven的时候在国内的网络环境中总是容易让人放弃，这是由于maven的机制，需要从中央库下载许多东西，包括maven自身的插件和项目中需要依赖的库。而恰恰maven的中央库在国内访问时总是会出现各种不稳定或者速度过慢的情况，故使用maven前首要工作就是配置好合适的仓库，以顺利下载各种需要的资源。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我如何选择了hexo">
-<meta property="og:url" content="http://voozoo.github.io/notebook/2016/12/17/我如何选择了hexo/index.html">
+<meta property="og:title" content="maven镜像配置">
+<meta property="og:url" content="http://voozoo.github.io/notebook/2016/12/18/maven镜像配置/index.html">
 <meta property="og:site_name" content="王小连的笔记本">
-<meta property="og:description" content="我的笔记本中原本是没打算记录类似这些感慨类的文章的，但是使用了这个新的平台发布文章后觉得还是应该留个纪念。">
-<meta property="og:updated_time" content="2016-12-17T11:39:50.000Z">
+<meta property="og:description" content="开始接触maven的时候在国内的网络环境中总是容易让人放弃，这是由于maven的机制，需要从中央库下载许多东西，包括maven自身的插件和项目中需要依赖的库。而恰恰maven的中央库在国内访问时总是会出现各种不稳定或者速度过慢的情况，故使用maven前首要工作就是配置好合适的仓库，以顺利下载各种需要的资源。">
+<meta property="og:updated_time" content="2016-12-18T09:50:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我如何选择了hexo">
-<meta name="twitter:description" content="我的笔记本中原本是没打算记录类似这些感慨类的文章的，但是使用了这个新的平台发布文章后觉得还是应该留个纪念。">
+<meta name="twitter:title" content="maven镜像配置">
+<meta name="twitter:description" content="开始接触maven的时候在国内的网络环境中总是容易让人放弃，这是由于maven的机制，需要从中央库下载许多东西，包括maven自身的插件和项目中需要依赖的库。而恰恰maven的中央库在国内访问时总是会出现各种不稳定或者速度过慢的情况，故使用maven前首要工作就是配置好合适的仓库，以顺利下载各种需要的资源。">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://voozoo.github.io/notebook/2016/12/17/我如何选择了hexo/"/>
+  <link rel="canonical" href="http://voozoo.github.io/notebook/2016/12/18/maven镜像配置/"/>
 
 
 
 
 
-  <title> 我如何选择了hexo | 王小连的笔记本 </title>
+  <title> maven镜像配置 | 王小连的笔记本 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -268,7 +268,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://voozoo.github.io/notebook/notebook/2016/12/17/我如何选择了hexo/">
+  <link itemprop="mainEntityOfPage" href="http://voozoo.github.io/notebook/notebook/2016/12/18/maven镜像配置/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="王小连">
@@ -292,7 +292,7 @@
             
             
               
-                我如何选择了hexo
+                maven镜像配置
               
             
           </h1>
@@ -305,8 +305,8 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-17T18:07:38+08:00">
-                2016-12-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-18T16:47:44+08:00">
+                2016-12-18
               </time>
             
 
@@ -319,8 +319,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               <span class="post-meta-item-text">更新于</span>
-              <time title="更新于" itemprop="dateModified" datetime="2016-12-17T19:39:50+08:00">
-                2016-12-17
+              <time title="更新于" itemprop="dateModified" datetime="2016-12-18T17:50:13+08:00">
+                2016-12-18
               </time>
             
           </span>
@@ -334,8 +334,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/notebook/categories/非技术/" itemprop="url" rel="index">
-                    <span itemprop="name">非技术</span>
+                  <a href="/notebook/categories/开发工具/" itemprop="url" rel="index">
+                    <span itemprop="name">开发工具</span>
                   </a>
                 </span>
 
@@ -349,8 +349,8 @@
             
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
-                <a href="/notebook/2016/12/17/我如何选择了hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/17/我如何选择了hexo/" itemprop="commentCount"></span>
+                <a href="/notebook/2016/12/18/maven镜像配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/18/maven镜像配置/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,15 +381,30 @@
       
 
       
-        <p>我的笔记本中原本是没打算记录类似这些感慨类的文章的，但是使用了这个新的平台发布文章后觉得还是应该留个纪念。<br><a id="more"></a></p>
-<h1 id="我在寻找什么平台"><a href="#我在寻找什么平台" class="headerlink" title="我在寻找什么平台"></a>我在寻找什么平台</h1><p>记得很久以前刚刚流行博客的时候也尝试过使用一些博客平台，但发现自己不是写作的料，也似乎没有什么坚持不懈的决心，没写多少就都放弃了。<br>后来出现微博的时候也觉得挺不错，又尝试坚持了一段时间，最终也是不了了之，可能是由于写过的东西对自己也没有什么用处，写过后也很少再回过头来看的缘故吧。<br>后来有了笔记本之类的软件，发现这个对自己还是有一些用处的，在解决各种问题的过程中查找的资料或者进行调研的过程还是很有必要记录下来的，否则在这个问题还没有完全消化吸收的时候，再次遇见时免不了还要进行重复的折腾。<br>最初都是使用富文本编辑，感觉也挺好看，但为了保持文章之间的一致性不得不花费大量时间进行样式方面的调整，这样有悖于做笔记的初衷。<br>直到发现了markdown，自然被这种极简的记录方式吸引了，也发现许多笔记类软件都不同程度地开始支持了markdown并都进行了各自的扩展。<br>但在遇到hexo之前至今没有找到一款合适的平台进行这些笔记的记录，希望能有一个简单便捷的记录媒介，能够永久的存储，方便地进行查找的平台就够了。</p>
-<h1 id="我使用过的一些平台"><a href="#我使用过的一些平台" class="headerlink" title="我使用过的一些平台"></a>我使用过的一些平台</h1><p>博客类的平台年代比较久远了，印象中使用的比较多的是CSDN的平台，做为国内技术类博客平台至今都非常活跃。<br>笔记类的软件用过几个，印象笔记、为知笔记、作业部落的CMD Markdown等，各有各的好处。印象笔记和为知笔记存的内容比较杂，很多是网络拷贝来的东西，当时觉得不错，现在看来似乎没有价值的东西很多，也懒得进行迁移了。<br>作业部落的那个内容不算多，基本上都是自己解决问题过程中的记录，自己也认为是经过严谨调查考证的东西，准备逐步迁移到这里。<br>实际上在使用hexo之前是准备使用jekyll发布到开源中国或者Github上进行笔记记录的，在调研jekyll的过程中才发现hexo的，虽然比jekyll复杂一些，但强大的功能足以弥补这一点。</p>
-<h1 id="目前hexo的使用方式"><a href="#目前hexo的使用方式" class="headerlink" title="目前hexo的使用方式"></a>目前hexo的使用方式</h1><p>使用hexo主要要关注两件事</p>
+        <p>开始接触maven的时候在国内的网络环境中总是容易让人放弃，这是由于maven的机制，需要从中央库下载许多东西，包括maven自身的插件和项目中需要依赖的库。而恰恰maven的中央库在国内访问时总是会出现各种不稳定或者速度过慢的情况，故使用maven前首要工作就是配置好合适的仓库，以顺利下载各种需要的资源。<br><a id="more"></a></p>
+<h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p><a href="http://maven.apache.org" target="_blank" rel="external">Apache Maven</a><br>版本: 3.3.9</p>
+<h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><p>在<code>settings.xml</code>配置文件中的<code>&lt;mirrors&gt;</code>小节增加需要的镜像地址。</p>
+<h2 id="配置文件位置"><a href="#配置文件位置" class="headerlink" title="配置文件位置"></a>配置文件位置</h2><p>maven可以有两个地方管理<code>settings.xml</code>文件：</p>
 <ul>
-<li>使用的主题</li>
-<li>托管的平台</li>
+<li>global: ${maven.home}/conf/settings.xml</li>
+<li>user: ${user.home}/.m2/settings.xml</li>
 </ul>
-<p>主题就太多了，也没有什么好坏之说，主要就是看看是否符合自己口味，我目前选定的是next主题。<br>托管的平台应该有三个选择，开源中国、Coding、Github，从国际化的角度来说还是选择世界范围名气大的Github吧。<br>由于hexo和next都是Github上的开源项目，考虑他们都有升级的可能，便自己摸索了一套组织这个笔记本工程结构的方式，也不知道好与不好，我相信在使用过程中自然会发现问题的。<br>对于hexo由于发布到了npm上，故hexo不使用源码管理，直接使用npm安装，当做基础工具来使用，使用<code>hexo init</code>初始化后的目录做为笔记本工程的基础目录。<br>对于next使用时由于需要根据自己需要调整其配置文件，故在Github上fork了原作者的源码，然后在hexo目录下clone了next主题源码进行使用。</p>
+<p>两个文件同时存在时会互相合并，并且<code>user</code>配置要优先于<code>global</code>配置。</p>
+<blockquote>
+<p>参考：<a href="http://maven.apache.org/settings.html" target="_blank" rel="external">Settings Reference</a></p>
+</blockquote>
+<h2 id="配置内容"><a href="#配置内容" class="headerlink" title="配置内容"></a>配置内容</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span></div><div class="line">  ...</div><div class="line">  <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span><span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span><span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span><span class="tag">&lt;/<span class="name">url</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span><span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></div><div class="line">  ...</div><div class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>参考：<a href="http://maven.apache.org/guides/mini/guide-mirror-settings.html" target="_blank" rel="external">Using Mirrors for Repositories</a></p>
+</blockquote>
+<h3 id="配置项说明"><a href="#配置项说明" class="headerlink" title="配置项说明"></a>配置项说明</h3><blockquote>
+<p>参考：<a href="http://maven.apache.org/ref/3.3.9/maven-settings/settings.html#mirror" target="_blank" rel="external">Settings#mirror</a></p>
+</blockquote>
+<h3 id="推荐国内镜像仓库"><a href="#推荐国内镜像仓库" class="headerlink" title="推荐国内镜像仓库"></a>推荐国内镜像仓库</h3><ul>
+<li>阿里云：<a href="http://maven.aliyun.com/nexus/content/groups/public/" target="_blank" rel="external">http://maven.aliyun.com/nexus/content/groups/public/</a></li>
+<li>开源中国：<a href="http://maven.oschina.net/content/groups/public/" target="_blank" rel="external">http://maven.oschina.net/content/groups/public/</a></li>
+</ul>
+<h3 id="配置例"><a href="#配置例" class="headerlink" title="配置例"></a>配置例</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>        </div><div class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -413,7 +428,9 @@
       
         <div class="post-tags">
           
-            <a href="/notebook/tags/hexo/" rel="tag"># hexo</a>
+            <a href="/notebook/tags/apache/" rel="tag"># apache</a>
+          
+            <a href="/notebook/tags/maven/" rel="tag"># maven</a>
           
         </div>
       
@@ -422,15 +439,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/notebook/2016/12/17/我如何选择了hexo/" rel="next" title="我如何选择了hexo">
+                <i class="fa fa-chevron-left"></i> 我如何选择了hexo
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/notebook/2016/12/18/maven镜像配置/" rel="prev" title="maven镜像配置">
-                maven镜像配置 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -459,8 +476,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/17/我如何选择了hexo/"
-           data-title="我如何选择了hexo" data-url="http://voozoo.github.io/notebook/notebook/2016/12/17/我如何选择了hexo/">
+      <div class="ds-thread" data-thread-key="2016/12/18/maven镜像配置/"
+           data-title="maven镜像配置" data-url="http://voozoo.github.io/notebook/notebook/2016/12/18/maven镜像配置/">
       </div>
     
   </div>
@@ -557,7 +574,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#我在寻找什么平台"><span class="nav-number">1.</span> <span class="nav-text">我在寻找什么平台</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我使用过的一些平台"><span class="nav-number">2.</span> <span class="nav-text">我使用过的一些平台</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目前hexo的使用方式"><span class="nav-number">3.</span> <span class="nav-text">目前hexo的使用方式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#工具"><span class="nav-number">1.</span> <span class="nav-text">工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置文件"><span class="nav-number">2.</span> <span class="nav-text">配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置文件位置"><span class="nav-number">2.1.</span> <span class="nav-text">配置文件位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置内容"><span class="nav-number">2.2.</span> <span class="nav-text">配置内容</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置项说明"><span class="nav-number">2.2.1.</span> <span class="nav-text">配置项说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#推荐国内镜像仓库"><span class="nav-number">2.2.2.</span> <span class="nav-text">推荐国内镜像仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置例"><span class="nav-number">2.2.3.</span> <span class="nav-text">配置例</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
